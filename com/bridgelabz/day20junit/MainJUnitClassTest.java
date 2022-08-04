@@ -13,4 +13,16 @@ public class MainJUnitClassTest {
         assertTrue(result);
     }
 
+    @Test
+    public void givenFirstCharacterUpperCase_whenTestedLastName_shouldReturnTrue() {
+        MainJUnitClass firstName = new MainJUnitClass();
+        boolean result = firstName.checkFirstName("Das");
+        assertTrue(result);
+    }
+    @Test
+    public void emailCheck_shouldReturnTrue() {
+        MainJUnitClass email = new MainJUnitClass();
+        boolean result = email.checkEmail("akash595@gmail.com");
+        assertTrue(result);
+    }
 }
