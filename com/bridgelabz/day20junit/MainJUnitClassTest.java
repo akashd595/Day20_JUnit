@@ -25,4 +25,10 @@ public class MainJUnitClassTest {
         boolean result = email.checkEmail("akash595@gmail.com");
         assertTrue(result);
     }
+    @Test
+    public void mobileNumberFormatCheck_shouldReturnTrue() {
+        MainJUnitClass mobileNumber = new MainJUnitClass();
+        boolean result = mobileNumber.checkMobileNumber("91 9910162995");
+        assertTrue(result);
+    }
 }
