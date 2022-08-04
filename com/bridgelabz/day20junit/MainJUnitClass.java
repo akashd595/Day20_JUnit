@@ -19,5 +19,9 @@ public class MainJUnitClass {
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
-
+    public boolean checkMobileNumber(String number) {
+        Pattern pattern = Pattern.compile("^([0-9]{2}+)[ ]([6-9]{1,1}+)([0-9]{9,9})$");
+        Matcher matcher = pattern.matcher(number);
+        return matcher.matches();
+    }
 }
